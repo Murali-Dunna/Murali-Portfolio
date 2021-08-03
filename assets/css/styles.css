@@ -197,6 +197,7 @@ img{
     opacity: 1 !important;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important ;
 }
+
 }
 
 /*Active menu*/
@@ -411,6 +412,10 @@ img{
   .home__title{
     font-size:3rem;
   }
+  .dark_mode{
+    bottom: 2rem;
+    right: 2rem;
+  }
   .section{
     padding-top: 4rem;
     padding-bottom: 2rem;
@@ -531,12 +536,13 @@ img{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+    
 }
 
 .dark_mode{
     position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 3rem;
+    right: 3rem;
     cursor: pointer;
     text-decoration: none;
 }
