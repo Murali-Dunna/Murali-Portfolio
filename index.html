@@ -51,13 +51,11 @@
                     <div class="cta">
                     <a href="assets/img/Murali Resume.pdf" target="_blank" class="button">Resume</a>
                 </div>
-                </div>
-
-                
-
-                <!-- <div class="home__img">    
-                    <img src="assets/img/perfil.png" alt="">
-                </div> -->
+             
+                </div>    
+                <div class="dark_mode">    
+                    <a id="dark-mode">Dark mode</a>
+                </div>            
             </section>
 
             <!--===== ABOUT =====-->
@@ -187,12 +185,27 @@
             </div>
            
         </footer>
-
-
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <!--===== Dark mode =====-->
+
+        <script>
+            var darkMode = document.getElementById("dark-mode");
+
+            darkMode.onclick = function(){
+                document.body.classList.toggle("dark_theme");
+                if(document.body.classList.contains("dark_theme")){
+                    darkMode.innerHTML = "Light mode";
+                }
+                else{
+                    darkMode.innerHTML = "Dark mode";
+                }
+            }
+
+        </script>
+
     </body>
 </html>
