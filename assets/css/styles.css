@@ -10,8 +10,15 @@
 :root{
   --first-color: #50CB93;
   --second-color: #161616;
+  --third-color: #fff;
+  --skillBg-color: #FDFDFD;
 }
-
+.dark_theme{
+  --first-color: #50CB93;
+  --second-color: #fff;
+  --third-color: #161616;
+  --skillBg-color: #1D1D1D;
+}
 /*===== Typography=====*/
 :root{
   --body-font: 'Poppins', sans-serif;
@@ -68,6 +75,13 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-color: var(--third-color);
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 h1,h2,p{
   margin: 0;
@@ -127,7 +141,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--third-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -157,7 +171,7 @@ img{
 }
 .nav__link{
   position: relative;
-  color: #fff;
+  color: var(--third-color);
 }
 .nav__link:hover{
   position: relative;
@@ -193,7 +207,6 @@ img{
   height: 0.18rem;
   left: 0;
   top: 1.8rem;
-  color: #4070F4;
   background-color: var(--first-color);
 }
 
@@ -325,7 +338,7 @@ img{
 
 
 .text{
-  color: #fff;
+  color: var(--third-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -362,7 +375,7 @@ img{
 }
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
+  background-color: #161616;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -494,13 +507,12 @@ img{
     margin-bottom: var(--mb-3);
 }
 .skills__name{
-    
     display: inline-block;
     font-size: 14px;
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: #FDFDFD;
+    background-color: var(--skillBg-color);
     border-radius: .25rem;
 }
 .skills__name:hover{
@@ -519,12 +531,18 @@ img{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
-
-    
 }
 
-
-
+.dark_mode{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dark_mode a{
+  color: var(--second-color);
+}
 
 
 
