@@ -541,8 +541,8 @@ img{
 
 .dark_mode{
     position: absolute;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 4rem;
+    right: 2rem;
     cursor: pointer;
     text-decoration: none;
 }
