@@ -99,7 +99,16 @@ img{
   height: auto;
   display: block;
 }
-
+.dark_mode{
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.dark_mode a{
+color: var(--second-color);
+}
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -538,18 +547,3 @@ img{
     }
     
 }
-
-.dark_mode{
-    position: absolute;
-    bottom: 4rem;
-    right: 2rem;
-    cursor: pointer;
-    text-decoration: none;
-}
-.dark_mode a{
-  color: var(--second-color);
-}
-
-
-
-
