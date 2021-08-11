@@ -52,7 +52,7 @@ sr.reveal('.skills__img',{delay: 600});
 sr.reveal('.skills__name',{delay: 600});
 
 /*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 200}); 
+sr.reveal('.work__img',{interval: 100}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__subtitle',{});
