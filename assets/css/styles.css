@@ -9,14 +9,14 @@
 /*===== Colors =====*/
 :root{
   --first-color: #50CB93;
-  --second-color: #161616;
+  --second-color: #082032;
   --third-color: #fff;
   --skillBg-color: #FDFDFD;
 }
 .dark_theme{
   --first-color: #50CB93;
   --second-color: #fff;
-  --third-color: #161616;
+  --third-color: #082032;
   --skillBg-color: #1D1D1D;
 }
 /*===== Typography=====*/
